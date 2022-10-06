@@ -67,7 +67,7 @@ $ -c1 c2 c3 c4 c5
 
 ## prod.py
 
-Takes one or more strings, separated by spaces, interprets each as either 1. A Majorana Fermion string if it contains at least one number, a Pauli string otherwise. If it is a Majorana string it is interpreted according to the same rules as `m2m.py` and `m2p.py`, if it is a Pauli is it interpreted in the same was as `p2m.py`. The inputted strings are multiplied together and the result printed. Optional argument "-m" sets the output to be printed as a (canonical form) Majorana string, by default the output is as a Pauli string.
+Takes one or more strings, separated by spaces, interprets each as either 1. a Majorana Fermion string if it contains at least one number, 2. a Pauli string otherwise. If it is a Majorana string it is interpreted according to the same rules as `m2m.py` and `m2p.py`, if it is a Pauli is it interpreted in the same was as `p2m.py`. The inputted strings are multiplied together and the result printed. Optional argument "-m" sets the output to be printed as a (canonical form) Majorana string, by default the output is as a Pauli string.
 
 Example usage:
 ```
