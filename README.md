@@ -14,7 +14,7 @@ If you use this for anything, feel free to drop me an email about it, I'd be ver
 Package the scripts depend on, doesn't do anything if you execute it. Maybe could add some tests to it. In addition to the functionality used in the remaining scripts it has the capability to apply Clifford operations to Pauli strings.
 
 ## m2m.py 
-Using the anticommutation relation $\{c_i, c_j\} = 2 \delta_{ij} I$, sort strings of Majorana Fermion operators into canonical order and remove duplicates.
+Using the anticommutation relation $\\{c_i, c_j\\} = 2 \delta_{ij} I$, sort strings of Majorana Fermion operators into canonical order and remove duplicates.
 
 Input format of Majorana Fermion operators is a prefix to describe the phase, which must be one of `+`, `+i`, `i`, `-`, `-i` or the empty string followed by one or more Majorana Fermion operators. Each Majorana Fermion operator is a number, and they are seperated by any strings that arent numbers. 
 
