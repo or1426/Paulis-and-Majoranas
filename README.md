@@ -13,6 +13,10 @@ If you use this for anything, feel free to drop me an email about it, I'd be ver
 ## pandm.py
 Package the scripts depend on, doesn't do anything if you execute it. Maybe could add some tests to it. In addition to the functionality used in the remaining scripts it has the capability to apply Clifford operations to Pauli strings.
 
+## clifford-ops.py
+
+Prints out a table summarising the action of the basic Clifford operations on 1 and 2 qubit Pauli strings. Currently takes no arguments
+
 ## m2m.py 
 Using the anticommutation relation $\\{c_i, c_j\\} = 2 \delta_{ij} I$, sort strings of Majorana Fermion operators into canonical order and remove duplicates.
 
