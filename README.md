@@ -77,4 +77,7 @@ $ ./prod.py -c -iZ X
 $ +c0
 $ ./prod.py Z c2 IIZ
 $ +IYZ
+$ ./prod.py c0c1c2 c1c2c5 c4c7c2
+$ -YXIX
+
 ```
