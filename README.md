@@ -7,6 +7,8 @@ and
 
 $$c_{2i+1} = \left(\prod_{j=0}^{i-1}Z_j\right) X_i.$$
 
+If you use this for anything, feel free to drop me an email about it, I'd be very interested to hear from you :).
+
 # Summary
 ## pandm.py
 Package the scripts depend on, doesn't do anything if you execute it. Maybe could add some tests to it. In addition to the functionality used in the remaining scripts it has the capability to apply Clifford operations to Pauli strings.
