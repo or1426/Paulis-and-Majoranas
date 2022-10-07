@@ -161,10 +161,10 @@ class PauliString:
         if idx < len(self.paulis):
             if self.paulis[idx] == Pauli.X:
                 self.paulis[idx] = Pauli.Z
-            if self.paulis[idx] == Pauli.Y:
+            elif self.paulis[idx] == Pauli.Y:
                 self.phase += 2
                 self.phase %= 4
-            if self.paulis[idx] == Pauli.Z:
+            elif self.paulis[idx] == Pauli.Z:
                 self.paulis[idx] = Pauli.Y
     def S(self, idx):
         if idx < len(self.paulis):
@@ -172,7 +172,7 @@ class PauliString:
                 self.paulis[idx] = Pauli.Y
                 self.phase += 2
                 self.phase %= 4
-            if self.paulis[idx] == Pauli.Y:
+            elif self.paulis[idx] == Pauli.Y:
                 self.paulis[idx] = Pauli.X
     def CZ(self, i1, i2):
         m = max([i1,i2])
