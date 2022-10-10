@@ -146,7 +146,7 @@ class PauliString:
     def __str__(self):
         s = None
         if self.phase == 0:
-            s = "+"
+            s = ""
         if self.phase == 1:
             s = "+i"
         if self.phase == 2:
@@ -161,18 +161,18 @@ class PauliString:
         if idx < len(self.paulis):
             if self.paulis[idx] == Pauli.X:
                 self.paulis[idx] = Pauli.Z
-            if self.paulis[idx] == Pauli.Y:
+            elif self.paulis[idx] == Pauli.Y:
                 self.phase += 2
                 self.phase %= 4
-            if self.paulis[idx] == Pauli.Z:
-                self.paulis[idx] = Pauli.Y
+            elif self.paulis[idx] == Pauli.Z:
+                self.paulis[idx] = Pauli.X
     def S(self, idx):
         if idx < len(self.paulis):
             if self.paulis[idx] == Pauli.X:
                 self.paulis[idx] = Pauli.Y
                 self.phase += 2
                 self.phase %= 4
-            if self.paulis[idx] == Pauli.Y:
+            elif self.paulis[idx] == Pauli.Y:
                 self.paulis[idx] = Pauli.X
     def CZ(self, i1, i2):
         m = max([i1,i2])
@@ -232,7 +232,7 @@ class MajoranaString:
             symbol = "c"
         s = None
         if self.phase == 0:
-            s = "+"
+            s = ""
         if self.phase == 1:
             s = "+i"
         if self.phase == 2:
@@ -296,8 +296,7 @@ class MajoranaString:
                     pass
         if inInt:
             newMajString.majs.append(int(string[int_start:]))
-        return newMajString                
-
+        return newMajString
 
 
 def parse_phase_from_string(string):
