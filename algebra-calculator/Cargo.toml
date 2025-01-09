@@ -1,0 +1,11 @@
+[package]
+name = "algebra-calculator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num = "0.4.3"
+rustyline = "15.0.0"
+
+[features]
+with-file-history = []
